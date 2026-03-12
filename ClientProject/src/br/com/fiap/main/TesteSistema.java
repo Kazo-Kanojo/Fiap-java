@@ -33,13 +33,14 @@ public class TesteSistema {
         objCliente.setIdade(Inteiro("Coloque a sua idade: "));
 
         //Entradas endereço do cliente
-        objEndereco.setBairro(texto(texto("Coloque seu bairro: ")));
-        objEndereco.setCep(texto("Coloque seu cep: "));
-        objEndereco.setCidade(texto("Coloque a cidade: "));
-        objEndereco.setComplemento(texto("Coloque o complemento: "));
-        objEndereco.setLogradouro(texto("Coloque o logradouro: "));
-        objEndereco.setNumero(Inteiro("Numero da casa: "));
-        objEndereco.setEstado(texto("Coloque o seu estado: "));
+        objEndereco.setEstado(texto("Coloque o seu estado"));
+        objEndereco.setNumero(Inteiro("Coloque o seu numero"));
+        objEndereco.setLogradouro(texto("Coloque o seu logradouro"));
+        objEndereco.setCep(texto("COloque o seu cep"));
+        objEndereco.setCidade(texto("COloque a sua cidade:"));
+        objEndereco.setComplemento(texto("Coloque o seu Complemento"));
+        objEndereco.setBairro(texto("Coloque o seu bairro"));
+
 
         objCliente.setEndereco(objEndereco);
 
