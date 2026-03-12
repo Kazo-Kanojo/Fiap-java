@@ -1,11 +1,15 @@
 package br.com.fiap.entities;
+
 public class Client {
+
+    //visibilidade, tipo de dado, atributo
     private String nome;
     private String cpf;
     private int idade;
     private double altura;
+    private Endereco endereco;
 
-    // Metodos seteers
+    //metodos getters e setter
     public void setNome(String nome) {
         this.nome = nome;
     }
@@ -19,8 +23,11 @@ public class Client {
 
         this.altura = altura;
     }
+    public  void setEndereco(Endereco endereco){
+        this.endereco = endereco;
+    }
 
-    //metodos getters
+
     public String getNome() {
         return nome;
     }
@@ -34,15 +41,18 @@ public class Client {
         return altura;
     }
 
+    public Endereco getEndereco() {
+        return endereco;
+    }
 
     @Override
     public String toString() {
-        return "Client{" +
+        return "Cliente" +
                 "\nnome='" + nome + '\'' +
                 "\n, cpf='" + cpf + '\'' +
                 "\n, idade=" + idade +
-                "\n, altura=" + altura +
-                '}';
+                "\n, altura=" + altura + endereco;
+
     }
 }
 
